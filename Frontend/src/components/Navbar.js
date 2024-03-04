@@ -7,7 +7,7 @@ const Navbar = () => {
 
   return (
     <>
-      <h1 className="text-center my-3 text-primary">Project Management</h1>
+      <h1 className="text-center my-3 text-primary">GD Project Management</h1>
       <p className="text-center lead">{`Currently ${tasksList.length} task's Pending`}</p>
       {
         (error !== '') ? <h5 className="text-center text-danger">{error}</h5> : null
