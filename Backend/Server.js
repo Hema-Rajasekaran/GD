@@ -11,6 +11,9 @@ app.use((req, res, next) => {
   next();
 });
 
+app.get("/",(req,res)=>{
+  res.json("helo")
+})
 app.use(cors());
 
 app.use(express.json());
