@@ -14,7 +14,11 @@ app.use((req, res, next) => {
 app.get("/",(req,res)=>{
   res.json("helo")
 })
-app.use(cors());
+app.use(cors({
+  origin:[''],
+  methods:['POST','GET'],
+  credentials:true
+}));
 
 app.use(express.json());
 // app.get("/", (req, res) => {
