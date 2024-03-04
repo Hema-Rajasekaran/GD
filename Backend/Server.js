@@ -15,7 +15,7 @@ app.get("/",(req,res)=>{
   res.json("helo")
 })
 app.use(cors({
-  origin:[''],
+  origin:['https://gd-frontend-beta.vercel.app'],
   methods:['POST','GET'],
   credentials:true
 }));
